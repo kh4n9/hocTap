@@ -3,5 +3,6 @@ public class demo {
         HOCSINH a = new HOCSINH();
         a.input();
         a.output();
+        a.rank();
     }
 }

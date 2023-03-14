@@ -53,4 +53,17 @@ public class HOCSINH {
         System.out.println("ho ten: " + this.hoten);
         System.out.println("dtb: " + this.dtb);
     }
+
+    public void rank() {
+        if(this.dtb > 5)
+            System.out.println("Yeu");
+        else if(this.dtb > 6.5)
+            System.out.println("Trung Binh");
+        else if(this.dtb > 8)
+            System.out.println("Kha");
+        else if(this.dtb > 9)
+            System.out.println("Gioi");
+        else
+            System.out.println("Xuat sac");
+    }
 }
