@@ -1,1 +1,1 @@
-tao cai kmoi ne
+chó phú ăn cứt
