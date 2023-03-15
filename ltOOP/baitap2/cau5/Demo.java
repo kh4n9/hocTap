@@ -1,5 +1,3 @@
-package ltOOP.baitap2.cau5;
-
 import java.util.Scanner;
 
 public class Demo {
