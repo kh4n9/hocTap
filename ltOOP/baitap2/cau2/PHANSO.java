@@ -6,6 +6,8 @@ public class PHANSO {
     private Scanner sc = new Scanner(System.in);
     
     public PHANSO() {
+        this.tu = 0;
+        this.mau = 1;
     }
     public PHANSO(int tu, int mau) {
         this.tu = tu;
