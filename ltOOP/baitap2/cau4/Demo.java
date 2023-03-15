@@ -12,12 +12,17 @@ public class Demo{
         nv.setHoten(hoten);
         nv.output();
         float max = nv1.getHsl();
-        if(nv2.getHsl() > max) max=nv2.getHsl();
-        else if(nv3.getHsl > max) max=nv3.getHsl();
+        if(nv2.getHsl() > max) 
+            max=nv2.getHsl();
+        else if(nv3.getHsl() > max) 
+            max=nv3.getHsl();
         System.out.println("Nhan vien co HSL lon nhat la: ");
-        if(max==nv1.getHsl()) nv1.output();
-        else{ 	if(max==nv2.getHsl()) nv2.output();
-        		else nv3.output();
+        if(max==nv1.getHsl()) 
+            nv1.output();
+        else{ 
+            if(max==nv2.getHsl()) 
+                nv2.output();
+        	else nv3.output();
             }
         nv.inSLNV();
     }
