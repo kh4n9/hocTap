@@ -16,5 +16,6 @@ public class DEMO {
         m = sc.nextInt();
         PHANSO p3 = new PHANSO(t, m);
         p3.xuatPS();
+        sc.close();
     }
 }
