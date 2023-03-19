@@ -10,15 +10,28 @@ public class MovableCircle extends Movable {
         this.center.setySpeed(ySpeed);
     }
 
+    public MovablePoint getCenter() {
+        return center;
+    }
+
     public MovableCircle(MovableCircle m) {
         this.radius = m.radius;
         this.center = m.center;
     }
 
     public boolean pointInside(MovablePoint p) {
-        if(p.distance(center) < this.radius)
+        if(p.distance(center) <= this.radius)
             return true;
         return false;
+    }
+
+    public double getArea(){
+        double a = Math.PI* Math.pow(this.radius,2);
+        return a;
+    }
+
+    public String toString() {
+        return center.toString() + ",radius="+this.radius;
     }
 
     public void moveUp() {
@@ -36,4 +49,6 @@ public class MovableCircle extends Movable {
     public void moveRight() {
         this.center.moveRight();
     }
+
+
 }
